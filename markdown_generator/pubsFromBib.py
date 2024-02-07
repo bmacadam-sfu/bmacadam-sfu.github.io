@@ -27,7 +27,7 @@ import re
 #todo: incorporate different collection types rather than a catch all publications, requires other changes to template
 publist = {
     "proceeding": {
-        "file" : "proceedings.bib",
+        "file" : os.path.join("C:\\", "Users","ben.macadam","Documents","GitHub","bmacadam-sfu.github.io","proceeding.bib"),
         "venuekey": "booktitle",
         "venue-pretext": "In the proceedings of ",
         "collection" : {"name":"publications",
@@ -35,7 +35,7 @@ publist = {
         
     },
     "journal":{
-        "file": "pubs.bib",
+        "file" : os.path.join("C:\\", "Users","ben.macadam","Documents","GitHub","bmacadam-sfu.github.io","journal.bib"),
         "venuekey" : "journal",
         "venue-pretext" : "",
         "collection" : {"name":"publications",
@@ -150,8 +150,8 @@ for pubsource in publist:
                 md += "\nUse [Google Scholar](https://scholar.google.com/scholar?q="+html.escape(clean_title.replace("-","+"))+"){:target=\"_blank\"} for full citation"
 
             md_filename = os.path.basename(md_filename)
-
-            with open("../_publications/" + md_filename, 'w') as f:
+            path = os.path.join("C:\\", "Users","ben.macadam","Documents","GitHub","bmacadam-sfu.github.io", "_publications", md_filename)
+            with open(md_filename, 'w') as f:
                 f.write(md)
             print(f'SUCESSFULLY PARSED {bib_id}: \"', b["title"][:60],"..."*(len(b['title'])>60),"\"")
         # field may not exist for a reference
