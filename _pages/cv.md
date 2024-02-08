@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "CV"
-permalink: /cv/
+permalink: cv/
 author_profile: true
 redirect_from:
   - /resume
@@ -11,7 +11,7 @@ redirect_from:
 
 Education
 ======
-* B.S. (Honours) in Mathematics and Statistics, University of Prince Edward Island, 2013
+* B.Sci. (Honours) in Mathematics and Statistics, University of Prince Edward Island, 2013
 * Ph.D in Computer Science, University of Calgary, 2022
 
 Work experience
