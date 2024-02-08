@@ -4,7 +4,7 @@ collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/2019-spring-teaching-1
 venue: "University of Calgary, Department of Computer Science"
-date: 2019
+date: 2019-01-01
 location: "Calgary, Ab"
 ---
 
